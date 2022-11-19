@@ -25,32 +25,32 @@ class PokemonCell: UITableViewCell {
         pokemonImage.image = UIImage(named: String(format: "%03d", pokemon.id))
         pokemonName.text = pokemon.name.english
         
-        
         if pokemon.type.count == 1 {
+            
             typePokemonOne.text = pokemon.type[0]
             typePokemonTwo.isHidden = true
-            
             typePokemonOne.backgroundColor = UIColor(named: pokemon.type[0].lowercased())
             
-            setRadiusLabel(label: typePokemonOne)
-            setRadiusLabel(label: typePokemonTwo)
+            setStyleLabel(label: typePokemonOne)
+            
             
         } else if pokemon.type.count > 1 {
+            
             typePokemonOne.text = pokemon.type[0]
             typePokemonTwo.text = pokemon.type[1]
-            
             typePokemonOne.backgroundColor = UIColor(named: pokemon.type[0].lowercased())
             typePokemonTwo.backgroundColor = UIColor(named: pokemon.type[1].lowercased())
             
-            setRadiusLabel(label: typePokemonOne)
-            setRadiusLabel(label: typePokemonTwo)
+            setStyleLabel(label: typePokemonOne)
+            setStyleLabel(label: typePokemonTwo)
             
         }
     }
     
-    func setRadiusLabel(label: UILabel) {
+    func setStyleLabel(label: UILabel) {
         label.layer.cornerRadius = 8
         label.layer.masksToBounds = true
-    }
+        label.textColor = .white
+        }
     
 }

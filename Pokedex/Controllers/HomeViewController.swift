@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Pokedex"
+        self.navigationController?.navigationBar.tintColor = .white
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -57,7 +58,13 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let detailScreen: UIStoryboard = UIStoryboard(name: "DetailScreen", bundle: nil)
+        
+        let detailVC = detailScreen.instantiateViewController(withIdentifier: "pokemonDetail") as! DetailViewController
+        
+        detailVC.pokemon = pokemon[indexPath.row]
         
         
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
