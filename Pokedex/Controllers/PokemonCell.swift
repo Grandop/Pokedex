@@ -28,12 +28,11 @@ class PokemonCell: UITableViewCell {
         if pokemon.type.count == 1 {
             
             typePokemonOne.text = pokemon.type[0]
-            typePokemonTwo.isHidden = true
             typePokemonOne.backgroundColor = UIColor(named: pokemon.type[0].lowercased())
+            typePokemonTwo.isHidden = true
             
             setStyleLabel(label: typePokemonOne)
-            
-            
+    
         } else if pokemon.type.count > 1 {
             
             typePokemonOne.text = pokemon.type[0]

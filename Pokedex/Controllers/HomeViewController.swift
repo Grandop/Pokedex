@@ -46,11 +46,11 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PokemonCell
+        let pokemonCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PokemonCell
         
-        cell.configCell(pokemon: pokemon[indexPath.row])
+        pokemonCell.configCell(pokemon: pokemon[indexPath.row])
         
-        return cell
+        return pokemonCell
     }
     
 }
