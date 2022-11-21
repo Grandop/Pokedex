@@ -18,7 +18,7 @@ class PokemonCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundCell.layer.cornerRadius = 8
+        backgroundCell.layer.cornerRadius = 10
     }
     
     func configCell(pokemon: Pokemon) {
