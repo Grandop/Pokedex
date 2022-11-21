@@ -39,10 +39,10 @@ class PokemonCell: UITableViewCell {
             typePokemonTwo.text = pokemon.type[1]
             typePokemonOne.backgroundColor = UIColor(named: pokemon.type[0].lowercased())
             typePokemonTwo.backgroundColor = UIColor(named: pokemon.type[1].lowercased())
+            typePokemonTwo.isHidden = false
             
             setStyleLabel(label: typePokemonOne)
             setStyleLabel(label: typePokemonTwo)
-            
         }
     }
     
@@ -50,6 +50,6 @@ class PokemonCell: UITableViewCell {
         label.layer.cornerRadius = 8
         label.layer.masksToBounds = true
         label.textColor = .white
-        }
+    }
     
 }
