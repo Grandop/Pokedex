@@ -21,6 +21,7 @@
 		F66BEAA52927EF0E00133875 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BEAA42927EF0E00133875 /* Language.swift */; };
 		F66BEAA72927F03200133875 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BEAA62927F03200133875 /* Base.swift */; };
 		F66BEAB12928062800133875 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BEAB02928062800133875 /* PokemonCell.swift */; };
+		F6E14C8A292BEB4F00662024 /* ParseJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E14C89292BEB4F00662024 /* ParseJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F66BEAA42927EF0E00133875 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		F66BEAA62927F03200133875 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		F66BEAB02928062800133875 /* PokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
+		F6E14C89292BEB4F00662024 /* ParseJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				F66BEAA22927EEED00133875 /* Pokemon.swift */,
 				F66BEAA42927EF0E00133875 /* Language.swift */,
 				F66BEAA62927F03200133875 /* Base.swift */,
+				F6E14C89292BEB4F00662024 /* ParseJson.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			files = (
 				F66BEAA72927F03200133875 /* Base.swift in Sources */,
 				F66BEAA32927EEED00133875 /* Pokemon.swift in Sources */,
+				F6E14C8A292BEB4F00662024 /* ParseJson.swift in Sources */,
 				F66BEAA52927EF0E00133875 /* Language.swift in Sources */,
 				C1F4DDB92927CCDA009B263A /* HomeViewController.swift in Sources */,
 				C1F4DDB52927CCDA009B263A /* AppDelegate.swift in Sources */,

@@ -18,24 +18,11 @@ class HomeViewController: UIViewController {
         self.title = "Pokedex"
         self.navigationController?.navigationBar.tintColor = .white
         
+        pokemon = parseJson()
+        
         tableView.dataSource = self
         tableView.delegate = self
     
-        parseJson()
-    }
-    
-    func parseJson() {
-        let jsonPath = Bundle.main.url(forResource: "pokedex", withExtension: "json")
-        if let path = jsonPath {
-            let jsonData = try? Data(contentsOf: path)
-            if let data = jsonData {
-                let decoder = JSONDecoder()
-                pokemon = try! decoder.decode([Pokemon].self, from: data)
-
-            }
-            
-        }
-        
     }
     
 }
