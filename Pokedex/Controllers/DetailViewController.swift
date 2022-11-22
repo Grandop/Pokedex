@@ -38,9 +38,9 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let backgroundColor = UIColor(named: (pokemon?.type[0].lowercased())!)
         firstView.backgroundColor = backgroundColor?.withAlphaComponent(0.8)
+        secondView.layer.cornerRadius = 30
         pokemonName.text = pokemon?.name.english
         pokemonImage.image = UIImage(named: String(format: "%03d", pokemon!.id))
         

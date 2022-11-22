@@ -99,7 +99,6 @@
 		F66BEA9B2927E9B900133875 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F66BEAB02928062800133875 /* PokemonCell.swift */,
 				C1F4DDB82927CCDA009B263A /* HomeViewController.swift */,
 				F6314C0129296C78007E6106 /* DetailViewController.swift */,
 			);
@@ -111,6 +110,7 @@
 			children = (
 				C1F4DDBA2927CCDA009B263A /* Main.storyboard */,
 				F6314BFF29296AED007E6106 /* DetailScreen.storyboard */,
+				F66BEAB02928062800133875 /* PokemonCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
